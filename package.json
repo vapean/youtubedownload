@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vapean/youtubedownload/issues"
   },
-  "homepage": "https://github.com/vapean/youtubedownload#readme"
+  "homepage": "https://github.com/vapean/youtubedownload#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
 }
