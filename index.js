@@ -31,6 +31,21 @@ const inquirer = require('inquirer');
 
 
     })
-    console.log(videos)
+
+    
+    inquirer.prompt([
+        {
+            type: 'list',
+            name: 'selectedVideo',
+            message: 'selecciona el video que quieras descargar',
+            choices: videos.map((item, i) => ({
+                name: `Video ${i + 1} - ${item.title} - ${item.chanel}`,
+                value: item
+            }))
+        }
+    ]).then(answers => {
+        console.log(answers['selectedVideo']);
+        
+    })
 
 })()
